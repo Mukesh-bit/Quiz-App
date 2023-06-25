@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:wght@400;500;600;700&family=Open+Sans&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400&family=Roboto:wght@300;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background: #001e4d;
+}
+
+.app {
+    background: #fff;
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto 0;
+    border-radius: 10px;
+    padding: 30px;
+    display: none;
+}
+
+.app h1 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #001e4d;
+    border-bottom: 1px solid #333;
+    padding-bottom: 20px;
+}
+
+.quiz {
+    padding: 20px 0;
+}
+
+.quiz h2 {
+    font-size: 18px;
+    color: #001e4d;
+    font-weight: 600;
+}
+
+.btn {
+    background: #fff;
+    color: #222;
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid #222;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    background: #222;
+    color: #fff;
+}
+
+#next-btn {
+    background: #001e4d;
+    color: #fff;
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+}
+
+.btn.selected {
+    background: #001e4d;
+    color: #fff;
+}
+
+.alert {
+    background-color: #5d9b63;
+    border-radius: 5px;
+    width: 100%;
+    padding: 12px;
+    position: absolute;
+    top: 0;
+    display: none;
+}
+
+.startBtn {
+    width: 15%;
+    padding-block: 20px;
+    text-align: center;
+    margin: 15rem auto;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.timer {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background-color: #08203e;
+    border: 2px solid #f00;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+
+
+@media screen and (max-width: 900px) {
+    .app {
+        width: 70%;
+        margin-top: 50px;
+    }
+    .app h1 {
+        font-size: 24px;
+    }
+    .app .question {
+        font-size: 22px;
+    }
+    .timer {
+        width: 10%;
+        /* height: 50px; */
+        font-size: 20px;
+    }
+    .startBtn {
+        width: 30%;
+    }
+}
